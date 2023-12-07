@@ -1,0 +1,57 @@
+<?php
+
+return [
+    'base_button_style' => [
+        'border',
+        'flex',
+        'items-center',
+        'justify-between',
+        'gap-1',
+        'appearance-none',
+        'cursor-pointer',
+        'rounded',
+        'text-sm',
+        'font-bold',
+        'focus:outline-none',
+        'focus:ring',
+        //'relative',
+        'disabled:cursor-not-allowed',
+        'shadow',
+        'h-6',
+        'px-2',
+        'ring-primary-200',
+        'dark:ring-gray-600',
+    ],
+    'button_styles' => [
+        'primary' => [
+            'bg-primary-500',
+            'border-primary-500',
+            'hover:enabled:bg-primary-400',
+            'hover:enabled:border-primary-400',
+            'text-white',
+            'dark:text-gray-900',
+        ],
+        'danger' => [
+            'bg-red-500',
+            'border-red-500',
+            'hover:enabled:bg-red-400',
+            'hover:enabled:border-red-400',
+            'text-white',
+            'dark:text-red-950',
+        ],
+        'success' => [
+            'bg-green-500',
+            'border-green-500',
+            'hover:enabled:bg-green-400',
+            'hover:enabled:border-green-400',
+            'text-white',
+        ],
+        'warning' => [
+            'bg-yellow-500',
+            'border-yellow-500',
+            'hover:enabled:bg-yellow-400',
+            'hover:enabled:border-yellow-400',
+            'text-white',
+        ],
+    ],
+];
