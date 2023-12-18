@@ -66,7 +66,6 @@ class DetachedAction extends Action
 
     public function __construct()
     {
-        $this->standalone = true;
         $this->buttonClasses = array_merge(
             (array) config('nova-detached-actions.base_button_style'),
             (array) config('nova-detached-actions.button_styles.primary'),
@@ -153,6 +152,7 @@ class DetachedAction extends Action
             'showDetached' => $this->showDetached,
             'buttonClasses' => $this->buttonClasses,
             'buttonStyles' => $this->buttonStyles,
+            'standalone' => false,
         ], parent::jsonSerialize(), [
             'destructive' => $this->isDestructive,
         ]);
