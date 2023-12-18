@@ -1,5 +1,10 @@
 # Laravel Nova Detached Actions
 
+This package is no longer necessarily required. Since Laravel Nova [v4.24.0](https://nova.laravel.com/releases/4.24.0), 
+there are
+now also standalone actions:  
+[Registering Actions: Standalone Actions](https://nova.laravel.com/docs/4.0/actions/registering-actions.html#standalone-actions)
+
 The idea based on [jeffersonsimaogoncalves/nova-detached-actions](https://github.com/jeffersonsimaogoncalves) by
 Jefferson Simão Gonçalves.
 
@@ -115,8 +120,8 @@ public function actions(NovaRequest $request): array
 
 The default style ist `primary`. Available are `primary`, `danger`, `success` and `warning`.
 
-You can publish the 
-[config file](https://github.com/Muetze42/nova-detached-actions/blob/main/config/nova-detached-actions.php) and 
+You can publish the
+[config file](https://github.com/Muetze42/nova-detached-actions/blob/main/config/nova-detached-actions.php) and
 change themes:
 
 ```shell
